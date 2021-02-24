@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        main {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 5vh;
+        }
+        
+        .my-nav {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding-bottom: 0;
+            vertical-align: middle;
+        }
+        
+        .my-nav a {
+            color: white;
+        }
+        
+        .my-container {
+            box-sizing: border-box;
+            margin-top: 5vh;
+        }
+        
+        .my-row {
+            height: 30vh;
+            line-height: 5vh;
+        }
+        
+        .my-col {
+            border: 1px solid #a7a4a4;
+            margin-right: 1px;
+            box-sizing: border-box;
+        }
+        
+        .footer-contain {
+            height: 35px;
+            margin: 10px 100px;
+            background: #a7a4a4;
+            position: relative;
+            bottom: 0;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            line-height: 30px;
+            align-items: center;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar my-nav">
+            <nav class='navbar my-2nav justify-content-start align-items-center'>
+                <h1><a class="navbar-brand" href="#">Project Explorer</a></h1>
+
+                <form class="form-inline" name="searchForm">
+                    <input class="form-control" type="search" placeholder="Search projects" aria-label="Search">
+                    <button class="btn btn-outline-light mx-1" type="submit">Search</button>
+                    <a class="navbar-brand" href="#">Submit</a>
+                </form>
+
+            </nav>
+            <nav class="navbar my-3nav justify-content-end">
+                <a class="navbar-brand form-group" href="#">Sign up</a>
+                <a class="navbar-brand form-group" href="#">Login</a>
+
+            </nav>
+        </nav>
+    </section>
+    <main>
+        <h4>Project Gallery</h4>
+        <div class="bg-light p3 my-form">
+            <form>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-8">
+                        <label for="form-label "></label>
+                        <input type="text" class="form-control " label="form-label" placeholder="Search projects names,authors,abstract,tags ">
+                    </div>
+
+                    <div class="form-group col-1  ">
+                        <button class="btn btn-ig" type="submit ">Searchby</button>
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="form-label "> </label>
+                        <select class="form-control " label="form-label">
+                        <option value = "Name">Name</option>
+                        <option value = "Abstract">Abstract</option>
+                        <option value = "Authors">Authors</option>
+                        <option value = "Tags">Tags</option>
+    
+                    </select>
+                    </div>
+                    <div class="form-group col-1  ">
+                        <button class="btn btn-ig btn-primary " type="submit " label="form-label">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <section>
+            <h5>All projects(0 results)</h5>
+            <div class="container justify-content-start my-container">
+                <div class="row my-row">
+                    <div class="col-4 my-col">
+                        <h3 class="card-title">Naruto</h3>
+                        <h4 class="card-subtitle">Uzumaki Naruto</h4>
+                        <p class="card-text"> A powerful fox known as the Nine-Tails attacks Konoha, the hidden leaf village in the Land of Fire
+                        </p>
+                    </div>
+
+
+
+                    <div class="col-4 my-col">
+                        <h3 class="card-title">One Piece</h3>
+                        <h4 class="card-subtitle">Monkey D. Luffy</h4>
+                        <p class="card-text"> At the age of 17, Luffy sets sails from the East Blue Sea to the Grand Line in search of the legendary treasure one piece</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <div class="footer-contain">
+        <div class="footer">
+            <span>Project Explorer 2020</span>
+            <span>-Edconnect</span>
+        </div>
+    </div>
+</body>
+
+</html>

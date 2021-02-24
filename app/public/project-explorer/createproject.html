@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .my-nav {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding-bottom: 0;
+            vertical-align: middle;
+        }
+        
+        .my-3nav {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding-bottom: 0;
+            vertical-align: middle;
+        }
+        
+        .my-nav a {
+            color: white;
+        }
+        
+        .my-container {
+            box-sizing: border-box;
+            margin-top: 5vh;
+        }
+        
+        .footer-contain {
+            height: 35px;
+            margin: 10px 100px;
+            background: #a7a4a4;
+            position: relative;
+            bottom: 0;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            line-height: 30px;
+            align-items: center;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar my-nav">
+        <nav class='navbar my-2nav justify-content-start align-items-center'>
+            <h1><a class="navbar-brand form-group" href="#">Project Explorer</a></h1>
+
+            <form class="form-inline " name="searchForm">
+                <input class="form-control" type="search" placeholder="Search projects" aria-label="Search">
+                <button class="btn btn-outline-light mx-1" type="submit">Search</button>
+                <a class="navbar-brand" href="#">Submit</a>
+            </form>
+
+        </nav>
+        <nav class="navbar my-3nav justify-content-end">
+            <a class="navbar-brand form-group" href="#">Sign up</a>
+            <a class="navbar-brand form-group" href="#">Login</a>
+
+        </nav>
+    </nav>
+    <main>
+
+
+        <form class="form-group mx-auto w-75">
+            <h1>Submit Project</h1>
+            <div class="form-group">
+                <label for="form-label"> Project name</label>
+                <input class="form-control" type="text" name="project name" placeholder="Enter project name">
+
+            </div>
+            <div class="form-group">
+                <label for="form-label"> Project abstract</label>
+                <textarea class="form-control" type="text" name="project abstract"></textarea>
+
+            </div>
+            <div class="form-group">
+                <label for="form-label"> Author(s)</label>
+                <input class="form-control" type="text" name="authors" placeholder="Enter author names (seperated by comma)">
+
+            </div>
+            <div class="form-group">
+                <label for="form-label"> Tag(s) </label>
+                <input class="form-control" type="text" name="tags" placeholder="Use # to tag project with different topics(e.g #javascript #mongodb)">
+                </br>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Continue</button>
+
+                </div>
+        </form>
+    </main>
+    <div class="footer-contain">
+        <div class="footer">
+            <span>Project Explorer 2020</span>
+            <span>-Edconnect</span>
+        </div>
+    </div>
+</body>
+
+</html>
